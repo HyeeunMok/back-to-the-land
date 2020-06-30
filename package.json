@@ -1,0 +1,22 @@
+{
+  "name": "back-to-the-land",
+  "version": "1.0.0",
+  "description": "Landing page for back to the land",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HyeeunMok/back-to-the-land.git"
+  },
+  "author": "Hyeeun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HyeeunMok/back-to-the-land/issues"
+  },
+  "homepage": "https://github.com/HyeeunMok/back-to-the-land#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
