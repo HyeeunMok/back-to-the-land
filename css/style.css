@@ -659,6 +659,63 @@ body {
     transform: translate(-50%, -50%);
     text-align: center; }
 
+/* line 2, sass/layout/_navigation.scss */
+.navigation__checkbox {
+  display: none; }
+
+/* line 5, sass/layout/_navigation.scss */
+.navigation__button {
+  background-color: #fff;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  border-radius: 50%;
+  z-index: 2000; }
+
+/* line 15, sass/layout/_navigation.scss */
+.navigation__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(#7ed56f, #28b485);
+  z-index: 1000;
+  transform: scale(80); }
+
+/* line 30, sass/layout/_navigation.scss */
+.navigation__nav {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1500; }
+
+/* line 38, sass/layout/_navigation.scss */
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center; }
+
+/* line 46, sass/layout/_navigation.scss */
+.navigation__item {
+  margin: 1rem; }
+
+/* line 49, sass/layout/_navigation.scss */
+.navigation__link {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase; }
+
 /* line 1, sass/pages/_home.scss */
 .section-about {
   background-color: #f7f7f7;
