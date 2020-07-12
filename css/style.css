@@ -708,13 +708,27 @@ body {
 .navigation__item {
   margin: 1rem; }
 
-/* line 49, sass/layout/_navigation.scss */
-.navigation__link {
+/* line 50, sass/layout/_navigation.scss */
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
   font-size: 3rem;
   font-weight: 300;
   color: #fff;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 220%;
+  transition: all 0.4s; }
+  /* line 67, sass/layout/_navigation.scss */
+  .navigation__link:link span, .navigation__link:visited span {
+    margin-right: 1.5rem;
+    display: inline-block; }
+
+/* line 72, sass/layout/_navigation.scss */
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: #55c57a;
+  transform: translateX(1rem); }
 
 /* line 1, sass/pages/_home.scss */
 .section-about {
