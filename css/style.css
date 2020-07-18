@@ -56,18 +56,21 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 /* line 9, sass/base/_base.scss */
 html {
-  font-size: 62.5%;
-  /* Same as 10px since default is 16px */ }
-  @media (max-width: 600px) {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    /* line 9, sass/base/_base.scss */
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
     /* line 9, sass/base/_base.scss */
     html {
       font-size: 50%; } }
-  @media (max-width: 600px) {
+  @media only screen and (min-width: 112.5em) {
     /* line 9, sass/base/_base.scss */
     html {
-      font-size: 50%; } }
+      font-size: 75%; } }
 
-/* line 22, sass/base/_base.scss */
+/* line 36, sass/base/_base.scss */
 body {
   box-sizing: border-box; }
 
