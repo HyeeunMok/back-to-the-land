@@ -168,20 +168,28 @@ body {
 /* line 4, sass/base/_utilities.scss */
 .u-margin-bottom-big {
   margin-bottom: 8rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    /* line 4, sass/base/_utilities.scss */
+    .u-margin-bottom-big {
+      margin-bottom: 5rem !important; } }
 
-/* line 7, sass/base/_utilities.scss */
+/* line 11, sass/base/_utilities.scss */
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    /* line 11, sass/base/_utilities.scss */
+    .u-margin-bottom-medium {
+      margin-bottom: 3rem !important; } }
 
-/* line 10, sass/base/_utilities.scss */
+/* line 18, sass/base/_utilities.scss */
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
 
-/* line 13, sass/base/_utilities.scss */
+/* line 21, sass/base/_utilities.scss */
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
-/* line 16, sass/base/_utilities.scss */
+/* line 24, sass/base/_utilities.scss */
 .u-margin-top-big {
   margin-top: 8rem !important; }
 
@@ -412,25 +420,49 @@ body {
     z-index: 10;
     transition: all 0.2s;
     outline-offset: 2rem; }
-    /* line 13, sass/components/_composition.scss */
+    @media only screen and (max-width: 56.25em) {
+      /* line 4, sass/components/_composition.scss */
+      .composition__photo {
+        float: left;
+        position: relative;
+        width: 33.3333333%;
+        box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); } }
+    /* line 20, sass/components/_composition.scss */
     .composition__photo--p1 {
       left: 0;
       top: -2rem; }
-    /* line 17, sass/components/_composition.scss */
+      @media only screen and (max-width: 56.25em) {
+        /* line 20, sass/components/_composition.scss */
+        .composition__photo--p1 {
+          top: 0;
+          transform: scale(1.2); } }
+    /* line 29, sass/components/_composition.scss */
     .composition__photo--p2 {
       right: 0;
       top: 2rem; }
-    /* line 21, sass/components/_composition.scss */
+      @media only screen and (max-width: 56.25em) {
+        /* line 29, sass/components/_composition.scss */
+        .composition__photo--p2 {
+          top: -1rem;
+          transform: scale(1.3);
+          z-index: 100; } }
+    /* line 39, sass/components/_composition.scss */
     .composition__photo--p3 {
       left: 20%;
       top: 10rem; }
-    /* line 25, sass/components/_composition.scss */
+      @media only screen and (max-width: 56.25em) {
+        /* line 39, sass/components/_composition.scss */
+        .composition__photo--p3 {
+          top: 1rem;
+          left: 0;
+          transform: scale(1.1); } }
+    /* line 49, sass/components/_composition.scss */
     .composition__photo:hover {
       outline: 1.5rem solid #55c57a;
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
-  /* line 32, sass/components/_composition.scss */
+  /* line 56, sass/components/_composition.scss */
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
 
@@ -443,7 +475,11 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem black;
   transition: transform 0.3s; }
-  /* line 10, sass/components/_feature-box.scss */
+  @media only screen and (max-width: 56.25em) {
+    /* line 1, sass/components/_feature-box.scss */
+    .feature-box {
+      padding: 2rem; } }
+  /* line 14, sass/components/_feature-box.scss */
   .feature-box__icon {
     font-size: 6rem;
     margin-bottom: 0.5rem;
@@ -451,7 +487,11 @@ body {
     background-image: linear-gradient(to right, #7ed56f, #28b485);
     -webkit-background-clip: text;
     color: transparent; }
-  /* line 22, sass/components/_feature-box.scss */
+    @media only screen and (max-width: 56.25em) {
+      /* line 14, sass/components/_feature-box.scss */
+      .feature-box__icon {
+        margin-bottom: 0; } }
+  /* line 30, sass/components/_feature-box.scss */
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
@@ -698,30 +738,34 @@ body {
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }
-  /* line 16, sass/layout/_footer.scss */
+    @media only screen and (max-width: 56.25em) {
+      /* line 11, sass/layout/_footer.scss */
+      .footer__logo-box {
+        margin-bottom: 6rem; } }
+  /* line 20, sass/layout/_footer.scss */
   .footer__logo {
     width: 15rem;
     height: auto; }
-  /* line 21, sass/layout/_footer.scss */
+  /* line 25, sass/layout/_footer.scss */
   .footer__navigation {
     border-top: 1px solid #777;
     padding-top: 2rem;
     display: inline-block; }
     @media only screen and (max-width: 56.25em) {
-      /* line 21, sass/layout/_footer.scss */
+      /* line 25, sass/layout/_footer.scss */
       .footer__navigation {
         width: 100%;
         text-align: center; } }
-  /* line 32, sass/layout/_footer.scss */
+  /* line 36, sass/layout/_footer.scss */
   .footer_list {
     list-style: none; }
-  /* line 36, sass/layout/_footer.scss */
+  /* line 40, sass/layout/_footer.scss */
   .footer__item {
     display: inline-block; }
-    /* line 39, sass/layout/_footer.scss */
+    /* line 43, sass/layout/_footer.scss */
     .footer__item:not(:last-child) {
       margin-right: 1.5rem; }
-  /* line 45, sass/layout/_footer.scss */
+  /* line 49, sass/layout/_footer.scss */
   .footer__link:link, .footer__link:visited {
     color: #f7f7f7;
     background-color: #333;
@@ -729,19 +773,19 @@ body {
     text-transform: uppercase;
     display: inline-block;
     transition: all 0.2s; }
-  /* line 55, sass/layout/_footer.scss */
+  /* line 59, sass/layout/_footer.scss */
   .footer__link:hover, .footer__linkactive {
     color: #55c57a;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
     transform: rotate(5deg) scale(1.3); }
-  /* line 63, sass/layout/_footer.scss */
+  /* line 67, sass/layout/_footer.scss */
   .footer__copyright {
     border-top: 1px solid #777;
     padding-top: 2rem;
     width: 80%;
     float: right; }
     @media only screen and (max-width: 56.25em) {
-      /* line 63, sass/layout/_footer.scss */
+      /* line 67, sass/layout/_footer.scss */
       .footer__copyright {
         width: 100%;
         float: none; } }
@@ -989,43 +1033,63 @@ body {
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
-  margin-top: -15vh; }
+  margin-top: -20vh; }
+  @media only screen and (max-width: 56.25em) {
+    /* line 1, sass/pages/_home.scss */
+    .section-about {
+      padding: 20rem 0; } }
 
-/* line 7, sass/pages/_home.scss */
+/* line 11, sass/pages/_home.scss */
 .section-features {
   padding: 20rem 0;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -11rem; }
-  /* line 20, sass/pages/_home.scss */
+  /* line 24, sass/pages/_home.scss */
   .section-features > * {
     transform: skewY(7deg); }
+  @media only screen and (max-width: 56.25em) {
+    /* line 11, sass/pages/_home.scss */
+    .section-features {
+      padding: 10rem 0; } }
 
-/* line 25, sass/pages/_home.scss */
+/* line 33, sass/pages/_home.scss */
 .section-tours {
   background-color: #f7f7f7;
   padding: 25rem 0 15rem 0;
   margin-top: -10rem; }
+  @media only screen and (max-width: 56.25em) {
+    /* line 33, sass/pages/_home.scss */
+    .section-tours {
+      padding: 20rem 0 10rem 0; } }
 
-/* line 31, sass/pages/_home.scss */
+/* line 43, sass/pages/_home.scss */
 .section-stories {
   position: relative;
   padding: 15rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    /* line 43, sass/pages/_home.scss */
+    .section-stories {
+      padding: 10rem 0; } }
 
-/* line 36, sass/pages/_home.scss */
+/* line 52, sass/pages/_home.scss */
 .section-book {
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+  @media only screen and (max-width: 56.25em) {
+    /* line 52, sass/pages/_home.scss */
+    .section-book {
+      padding: 10rem 0; } }
 
-/* line 45, sass/pages/_home.scss */
+/* line 65, sass/pages/_home.scss */
 .book {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
   height: 50rem; }
-  /* line 59, sass/pages/_home.scss */
+  /* line 79, sass/pages/_home.scss */
   .book__form {
     width: 50%;
     padding: 6rem; }
