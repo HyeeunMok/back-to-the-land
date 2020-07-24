@@ -717,7 +717,17 @@ body {
   padding-left: 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg); }
-  /* line 12, sass/components/_story.scss */
+  @media only screen and (max-width: 56.25em) {
+    /* line 1, sass/components/_story.scss */
+    .story {
+      width: 100%;
+      padding: 4rem;
+      padding-left: 7rem; } }
+  @media only screen and (max-width: 37.5em) {
+    /* line 1, sass/components/_story.scss */
+    .story {
+      transform: skewX(0); } }
+  /* line 22, sass/components/_story.scss */
   .story__shape {
     width: 15rem;
     height: 15rem;
@@ -729,16 +739,24 @@ body {
     transform: translateX(-3rem) skewX(12deg);
     overflow: hidden;
     position: relative; }
-  /* line 24, sass/components/_story.scss */
+    @media only screen and (max-width: 37.5em) {
+      /* line 22, sass/components/_story.scss */
+      .story__shape {
+        transform: translateX(-3rem) skewX(0); } }
+  /* line 38, sass/components/_story.scss */
   .story__img {
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
     transition: all 0.5s;
     backface-visibility: hidden; }
-  /* line 30, sass/components/_story.scss */
+  /* line 44, sass/components/_story.scss */
   .story__text {
     transform: skewX(12deg); }
-  /* line 33, sass/components/_story.scss */
+    @media only screen and (max-width: 37.5em) {
+      /* line 44, sass/components/_story.scss */
+      .story__text {
+        transform: skewX(0); } }
+  /* line 51, sass/components/_story.scss */
   .story__caption {
     position: absolute;
     top: 50%;
@@ -751,11 +769,11 @@ body {
     opacity: 0;
     transition: all 0.5s;
     backface-visibility: hidden; }
-  /* line 47, sass/components/_story.scss */
+  /* line 65, sass/components/_story.scss */
   .story:hover .story__caption {
     opacity: 1;
     transform: translate(-50%, -50%); }
-  /* line 52, sass/components/_story.scss */
+  /* line 70, sass/components/_story.scss */
   .story:hover .story__img {
     transform: translateX(-4rem) scale(1);
     filter: blur(3px) brightness(80%); }
@@ -1123,9 +1141,21 @@ body {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
   background-size: 100%;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-  height: 50rem; }
-  /* line 79, sass/pages/_home.scss */
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+  @media only screen and (max-width: 75em) {
+    /* line 65, sass/pages/_home.scss */
+    .book {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nat-10.jpg);
+      background-size: cover; } }
+  @media only screen and (max-width: 56.25em) {
+    /* line 65, sass/pages/_home.scss */
+    .book {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg); } }
+  /* line 97, sass/pages/_home.scss */
   .book__form {
     width: 50%;
     padding: 6rem; }
+  @media only screen and (max-width: 75em) {
+    /* line 65, sass/pages/_home.scss */
+    .book {
+      width: 65%; } }
