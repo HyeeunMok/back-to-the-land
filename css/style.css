@@ -407,6 +407,42 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
+  @media only screen and (max-width: 56.25em) {
+    /* line 1, sass/components/_card.scss */
+    .card {
+      height: auto;
+      border-radius: 3px;
+      background-color: white;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+      /* line 178, sass/components/_card.scss */
+      .card__side {
+        height: auto;
+        position: relative;
+        box-shadow: none; }
+        /* line 183, sass/components/_card.scss */
+        .card__side--back {
+          transform: rotateY(0);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
+      /* line 189, sass/components/_card.scss */
+      .card:hover .card__side--front {
+        transform: rotateY(0); }
+      /* line 192, sass/components/_card.scss */
+      .card__details {
+        padding: 1 3rem; }
+      /* line 197, sass/components/_card.scss */
+      .card__cta {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+        width: 100%;
+        padding: 7rem 4rem 4rem 4rem; }
+      /* line 206, sass/components/_card.scss */
+      .card__price-box {
+        margin-bottom: 3rem; }
+      /* line 210, sass/components/_card.scss */
+      .card__price-value {
+        font-size: 4rem; } }
 
 /* line 1, sass/components/_composition.scss */
 .composition {
