@@ -902,7 +902,7 @@ body {
 /* line 1, sass/layout/_header.scss */
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -911,20 +911,28 @@ body {
   /* .logo-box:hover .logo {
     animation: moveInRight 1s ease-in;
   } */ }
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    /* line 1, sass/layout/_header.scss */
+    .header {
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8)), url(../img/hero.jpg); } }
+  @media (min-width: 2000px) {
+    /* line 1, sass/layout/_header.scss */
+    .header {
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8)), url(../img/hero.jpg); } }
   @media only screen and (max-width: 37.5em) {
     /* line 1, sass/layout/_header.scss */
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
-  /* line 20, sass/layout/_header.scss */
+  /* line 38, sass/layout/_header.scss */
   .header__logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem; }
-  /* line 26, sass/layout/_header.scss */
+  /* line 44, sass/layout/_header.scss */
   .header__logo {
     height: 3.5rem; }
-  /* line 32, sass/layout/_header.scss */
+  /* line 50, sass/layout/_header.scss */
   .header__text-box {
     position: absolute;
     top: 40%;
